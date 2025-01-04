@@ -1,0 +1,10 @@
+# Need it to be AI driven
+# https://docs.gitlab.com/ee/development/documentation/topic_types/concept.html#concept-topic-titles
+extends: existence
+message: "Headings shouldn't have periods or other Markdown formatting"
+level: error
+scope: heading
+ignorecase: false
+nonword: true
+raw:
+  - '`|(?<=.)\.$'
